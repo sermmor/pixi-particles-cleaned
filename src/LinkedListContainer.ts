@@ -642,7 +642,7 @@ export class LinkedListContainer extends Container
                 continue;
             }
 
-            child.calculateBounds();
+            (<any> child).calculateBounds();
 
             // TODO: filter+mask, need to mask both somehow
             if ((child as any)._mask)
@@ -719,7 +719,7 @@ export class LinkedListContainer extends Container
             for (child = this._firstChild; child; child = next)
             {
                 next = child.nextChild;
-                child.render(renderer);
+                (<any> child).render(renderer);
             }
         }
     }
@@ -776,7 +776,7 @@ export class LinkedListContainer extends Container
         for (child = this._firstChild; child; child = next)
         {
             next = child.nextChild;
-            child.render(renderer);
+            (<any> child).render(renderer);
         }
 
         renderer.batch.flush();

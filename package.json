@@ -1,9 +1,9 @@
 {
   "name": "pixi-particles-cleaned",
   "version": "4.3.0",
-  "main": "lib/pixi-particles.js",
-  "module": "lib/pixi-particles.es.js",
-  "bundle": "dist/pixi-particles.js",
+  "main": "lib/pixi-particles-cleaned.js",
+  "module": "lib/pixi-particles-cleaned.es.js",
+  "bundle": "dist/pixi-particles-cleaned.js",
   "typings": "index.d.ts",
   "description": "Particle emitter for Pixi.js",
   "author": "Andrew Start <start.andrew@gmail.com>",
@@ -15,10 +15,8 @@
   ],
   "scripts": {
     "clean": "rimraf docs/docs docs/dist .publish",
-    "lint": "eslint --ext .ts src",
-    "prebuild": "npm run lint",
     "build": "tsc && rollup -c && npm run build:min && npm run build:dts",
-    "build:min": "terser dist/pixi-particles.js -c -m -o dist/pixi-particles.min.js --source-map \"content='dist/pixi-particles.js.map',includeSources=true,filename='dist/pixi-particles.min.js.map',url='pixi-particles.min.js.map'\" --comments \"/pixi-particles.js - /\"",
+    "build:min": "terser dist/pixi-particles-cleaned.js -c -m -o dist/pixi-particles-cleaned.min.js --source-map \"content='dist/pixi-particles-cleaned.js.map',includeSources=true,filename='dist/pixi-particles-cleaned.min.js.map',url='pixi-particles-cleaned.min.js.map'\" --comments \"/pixi-particles-cleaned.js - /\"",
     "build:dts": "dts-bundle-generator -o index.d.ts src/index.ts && node build/buildAmbientTypes.js",
     "postbuild": "ncp dist docs/dist",
     "predocs": "ncp node_modules/pixi.js docs/examples/libs/pixi.js",
@@ -61,10 +59,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixijs/pixi-particles"
+    "url": "https://github.com/pixijs/pixi-particles-cleaned"
   },
   "bugs": {
-    "url": "https://github.com/pixijs/pixi-particles/issues"
+    "url": "https://github.com/pixijs/pixi-particles-cleaned/issues"
   },
   "files": [
     "dist/",

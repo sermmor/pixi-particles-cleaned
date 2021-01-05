@@ -1,16 +1,21 @@
 {
   "name": "pixi-particles-cleaned",
-  "version": "4.3.0",
+  "version": "1.0.0",
   "main": "lib/pixi-particles-cleaned.js",
   "module": "lib/pixi-particles-cleaned.es.js",
   "bundle": "dist/pixi-particles-cleaned.js",
   "typings": "index.d.ts",
   "description": "Particle emitter for Pixi.js",
-  "author": "Andrew Start <start.andrew@gmail.com>",
+  "author": "Sergio Martín",
   "contributors": [
+    "Sergio Martín <sermmor@outlook.com> (https://github.com/sermmor)",
     {
       "name": "Matt Karl",
       "email": "matt@mattkarl.com"
+    },
+    {
+      "name": "Andrew Start",
+      "email": "start.andrew@gmail.com"
     }
   ],
   "scripts": {
@@ -25,10 +30,6 @@
     "docs-live": "gh-pages -d docs",
     "postdocs-live": "git checkout .",
     "version": "npm run build",
-    "publish:patch": "npm version patch && node build/publish.js",
-    "publish:minor": "npm version minor && node build/publish.js",
-    "publish:major": "npm version major && node build/publish.js",
-    "postpublish": "git push && git push --tags && npm run docs-live",
     "examples": "npm run predocs && http-server docs/",
     "test": "echo done"
   },
@@ -59,10 +60,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixijs/pixi-particles-cleaned"
+    "url": "https://github.com/sermmor/pixi-particles-cleaned"
   },
   "bugs": {
-    "url": "https://github.com/pixijs/pixi-particles-cleaned/issues"
+    "url": "https://github.com/sermmor/pixi-particles-cleaned/issues"
   },
   "files": [
     "dist/",
@@ -89,5 +90,5 @@
       "test/pixi-v5-module"
     ]
   },
-  "private": true
+  "private": false
 }

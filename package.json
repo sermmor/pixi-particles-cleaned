@@ -8,7 +8,10 @@
   "description": "Particle emitter for Pixi.js",
   "author": "Sergio Martín",
   "contributors": [
-    "Sergio Martín <sermmor@outlook.com> (https://github.com/sermmor)",
+    {
+      "name": "Sergio Martín",
+      "email": "sermmor@outlook.com"
+    },
     {
       "name": "Matt Karl",
       "email": "matt@mattkarl.com"
@@ -89,6 +92,9 @@
       "test/pixi-v5-iife",
       "test/pixi-v5-module"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "private": false
 }

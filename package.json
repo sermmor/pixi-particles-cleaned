@@ -1,5 +1,5 @@
 {
-  "name": "pixi-particles",
+  "name": "pixi-particles-cleaned",
   "version": "4.3.0",
   "main": "lib/pixi-particles.js",
   "module": "lib/pixi-particles.es.js",
@@ -45,8 +45,8 @@
     "gh-pages": "^2.0.0",
     "http-server": "^0.12.3",
     "ncp": "^2.0.0",
-    "pixi.js": "^5.0.0",
-    "rimraf": "^2.5.4",
+    "pixi.js": "5.3.7",
+    "rimraf": "2.6.3",
     "rollup": "^2.7.0",
     "rollup-plugin-commonjs": "^9.2.1",
     "rollup-plugin-jscc": "^1.0.0",
@@ -57,7 +57,7 @@
     "terser": "^3.16.1",
     "tslib": "^1.11.1",
     "typedoc": "^0.17.5",
-    "typescript": "^3.8.0"
+    "typescript": "3.5.3"
   },
   "repository": {
     "type": "git",
